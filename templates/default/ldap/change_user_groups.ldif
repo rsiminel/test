@@ -1,0 +1,14 @@
+{% for group_dn in group_add_dn %}
+dn: {{ group_dn }}
+changetype: modify
+add: memberUid
+memberUid: {{ user.uid }}
+
+{% endfor %}
+{% for group_dn in group_remove_dn %}
+dn: {{ group_dn }}
+changetype: modify
+delete: memberUid
+memberUid: {{ user.uid }}
+
+{% endfor %}

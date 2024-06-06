@@ -1,0 +1,11 @@
+node_modules
+manager/bower_components
+config/default.json
+config/test.json
+venv
+build
+tests/.env
+tests/cron
+tests/home_dir
+manager2/node_modules
+manager2/dist

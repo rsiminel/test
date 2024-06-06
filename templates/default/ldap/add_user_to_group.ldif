@@ -1,0 +1,4 @@
+dn: {{ group_dn }}
+changetype: modify
+add: memberUid
+memberUid: {{ user.uid }}
